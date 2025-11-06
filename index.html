@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Your Eyes Only</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen active">
+        <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+                <h2>You have a secret message</h2>
+                <p>Tap to open</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Name Verification Screen -->
+    <div id="nameScreen" class="screen">
+        <div class="name-container">
+            <h2>To access this message..</h2>
+            <p>Please enter the name I call you:</p>
+            <input type="text" id="nameInput" placeholder="Enter your special name">
+            <button onclick="verifyName()">Open My Heart</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Main Content Screen -->
+    <div id="mainScreen" class="screen">
+        <div class="love-letter">
+            <header>
+                <h1>My Dearest <span id="herName"></span>,</h1>
+                <p class="date">Happy <span id="anniversaryNumber"></span> Anniversary!</p>
+            </header>
+  
+            <div class="letter-content">
+                <!-- <p>From the moment you came into my life, everything changed...</p> -->
+                
+                <!-- Your personalized letter content here -->
+                <p>
+Happy 3rd anniversary to us. Three years have passed, yet it still feels like our story is just beginning. Every moment with you has shaped me, strengthened me, and shown me what real love truly feels like. You are more than just my girlfriend. you are my confidant, my happiness, my greatest blessing.
+
+Thank you for loving me in the days when I’m at my best, and especially in the days when I’m not. Thank you for your patience, your laughter, your kindness, and the warmth you bring into my life. You inspire me to become better, to dream bigger, and to love deeper.
+
+I am proud of how far we’ve come, the obstacles we’ve overcome, the memories we’ve created, and the bond we’ve built. And I’m even more excited for everything that lies ahead. I want to continue growing with you, supporting you, celebrating you, and choosing you every single day.
+
+As we step into another year together, I want to keep loving you with honesty, respect, and commitment. You are my heart, my comfort, and a safe space.
+
+<p>Cheers to the 3rd year of loving a lifetime.</p>
+</p>
+                
+                <!-- <p>You are my everything, today and always.</p> -->
+            </div>
+            
+            <footer>
+                <p>With all my love,</p>
+                <p><span id="yourName"></span> .</p>
+            </footer>
+        </div>
+<!-- Memory Gallery -->
+<div class="memories">
+    <!-- <h2>Our Beautiful Memories</h2> -->
+    <div class="gallery">
+        <!-- First Memory - Image -->
+        <div class="memory-item">
+            <img src="./images/WhatsApp Image 2025-11-06 at 22.19.03_88d6c189.jpg" alt="Our first date">
+        </div>
+        
+        <!-- Second Memory - Video -->
+        <div class="memory-item">
+            <video controls poster="video-poster.jpg">
+                <source src="./videos/WhatsApp Video 2025-11-06 at 22.40.06_8c989132.mp4" type="video/mp4">
+                <source src="our-memory-video.webm" type="video/webm">
+            </video>
+            <div class="video-controls"></div>
+        </div>
+        
+        <!-- Third Memory - Image -->
+        <div class="memory-item">
+            <img src="./images/WhatsApp Image 2025-11-06 at 22.19.55_3f160017.jpg" alt="Special moment">
+        </div>
+        
+        <!-- Add more memories as needed -->
+    </div>
+</div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
